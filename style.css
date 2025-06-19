@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+
+}
+body{
+    background: linear-gradient(to right,rgb(31, 158, 167),white,rgb(233, 69, 225));
+}
+.container{
+     
+    color: white;
+    background-color: black;
+
+
+    width: 38%;
+    max-width: 380px;
+   
+    border-radius :20px ;
+    padding: 20px ;
+   
+    margin: auto;
+    margin-top: 100px;
+}
+
+.heading i{
+    color: orange;
+    padding: 6px;
+}
+.heading p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+ 
+
+}
+.heading{
+    display: flex;
+    padding: 2px;
+}
+#input-panel input{
+    background-color: rgb(247, 243, 243);
+    width: 256px;
+    padding: 12px;
+    height: 39px;
+    border: none; 
+    color: rgb(22, 19, 19) ;
+    border-radius: 22px;
+    outline: none;
+}
+
+#input-panel input:hover{
+   
+    border: 1px solid black;
+   
+}
+
+
+
+
+#input-panel button{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    
+    padding: 12px;
+    cursor: pointer;
+        border: none;
+
+
+    width: 67px;
+
+    border-radius: 44px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+    
+
+ul li::before{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    content: " ";
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+
+ul li.checked{
+    color: #b6b5b5;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li cross{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+    color: whitesmoke;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50% ;
+    
+   
+}
+ul li cross:hover{
+    background: rgb(78, 75, 75);
+   
+}
+
