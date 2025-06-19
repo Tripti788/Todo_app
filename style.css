@@ -2,42 +2,39 @@
     padding: 0px;
     margin: 0px ;
     box-sizing: border-box;
-
 }
+
 body{
     background: linear-gradient(to right,rgb(31, 158, 167),white,rgb(233, 69, 225));
 }
+
 .container{
-     
     color: white;
     background-color: black;
-
-
     width: 38%;
     max-width: 380px;
-   
     border-radius :20px ;
     padding: 20px ;
-   
     margin: auto;
     margin-top: 100px;
+}
+
+.heading{
+    display: flex;
+    padding: 2px;
 }
 
 .heading i{
     color: orange;
     padding: 6px;
 }
+
 .heading p{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 1.3rem;
- 
+}
 
-}
-.heading{
-    display: flex;
-    padding: 2px;
-}
 #input-panel input{
     background-color: rgb(247, 243, 243);
     width: 256px;
@@ -50,25 +47,16 @@ body{
 }
 
 #input-panel input:hover{
-   
     border: 1px solid black;
-   
 }
-
-
-
 
 #input-panel button{
     background-color: rgb(255, 94, 0);
     color: white;
-    
     padding: 12px;
     cursor: pointer;
-        border: none;
-
-
+    border: none;
     width: 67px;
-
     border-radius: 44px;
 }
 
@@ -80,7 +68,6 @@ ul li{
     cursor: pointer;
     position:relative;
 }
-    
 
 ul li::before{
     height: 25px;
@@ -93,7 +80,6 @@ ul li::before{
     top: 12px;
     left: 8px;
 }
-
 
 ul li.checked{
     color: #b6b5b5;
@@ -115,11 +101,53 @@ ul li cross{
     line-height: 40px;
     text-align: center;
     border-radius:50% ;
-    
-   
-}
-ul li cross:hover{
-    background: rgb(78, 75, 75);
-   
 }
 
+ul li cross:hover{
+    background: rgb(78, 75, 75);
+}
+
+/* MEDIA QUERIES START HERE */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        margin-top: 60px;
+    }
+    #input-panel input {
+        width: 60%;
+        font-size: 1rem;
+    }
+    #input-panel button {
+        width: 30%;
+        font-size: 1rem;
+    }
+    .heading p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin-top: 40px;
+        padding: 15px;
+    }
+    #input-panel input {
+        width: 55%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    #input-panel button {
+        width: 35%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .heading p {
+        font-size: 1rem;
+    }
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 50px;
+    }
+}
